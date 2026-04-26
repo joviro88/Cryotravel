@@ -10,6 +10,19 @@
   />
   <link rel="stylesheet" href="css/estils.css" />
 </head>
+<script>
+  function loadVideo(element) {
+    element.innerHTML = `
+      <iframe
+        src="https://www.youtube.com/embed/HW1hUt1jkSg?autoplay=1"
+        title="Espot Cryotravel Labs"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    `;
+  }
+</script>
 <body>
   <header class="site-header">
     <div class="container nav">
@@ -185,16 +198,19 @@
             </p>
           </div>
       
-          <div class="video-box">
-            <iframe
-              src="https://www.youtube.com/embed/HW1hUt1jkSg"
-              title="Espot Cryotravel Labs"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen>
-            </iframe>
+          <div class="video-box video-placeholder" onclick="loadVideo(this)">
+            <img
+              src="img/video.jpg"
+              alt="Portada visual de l'espot de Cryotravel Labs"
+              class="video-cover"
+            />
+          
+            <div class="video-overlay">
+              <div class="play-button">▶</div>
+              <p>Espot publicitari sobre criogènesi i viatges espacials</p>
+            </div>
           </div>
-        </div>
+          
     </section>
     <section class="ethics section" id="etica">
       <div class="container ethics-grid">
