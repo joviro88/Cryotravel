@@ -386,13 +386,17 @@ a {
   overflow: hidden;
   background: var(--bg-card);
   box-shadow: var(--shadow);
+  aspect-ratio: 16 / 9;
+  cursor: pointer;
 }
+
 
 .video-cover {
   width: 100%;
-  height: 560px;
+  height: 100%;
   object-fit: cover;
-  filter: brightness(0.72);
+  display: block;
+  filter: brightness(0.65);
 }
 
 .video-overlay {
@@ -402,12 +406,20 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 18px;
-  background: linear-gradient(
-    180deg,
-    rgba(3, 16, 28, 0.12),
-    rgba(3, 16, 28, 0.42)
-  );
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.play-button {
+  width: 82px;
+  height: 82px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(0, 224, 255, 0.22);
+  border: 1px solid rgba(0, 224, 255, 0.65);
+  font-size: 34px;
+  margin-bottom: 18px;
   text-align: center;
   padding: 24px;
 }
@@ -558,10 +570,9 @@ a {
 
 .video-box iframe {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  border-radius: 20px;
+  height: 100%;
   display: block;
+  border: 0;
 }
 
   overflow: hidden;
