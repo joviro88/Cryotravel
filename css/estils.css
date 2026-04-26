@@ -556,11 +556,14 @@ a {
     padding: 24px;
   }
 
-  .video-box iframe {
+.video-box iframe {
   width: 100%;
   aspect-ratio: 16 / 9;
   height: auto;
+  border-radius: 20px;
   display: block;
-  border: 0;
 }
+
+  overflow: hidden;
+border-radius: var(--radius-lg);
 }
