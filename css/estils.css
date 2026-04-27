@@ -401,14 +401,12 @@ a {
 
 .video-overlay {
   position: absolute;
-  inset: 0;
+  inset: 0; /* ocupa tot el contenidor */
+
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  color: white;
-  text-align: center;
-  padding: 20px;
+  flex-direction: column;
 }
 .play-button {
   width: 82px;
