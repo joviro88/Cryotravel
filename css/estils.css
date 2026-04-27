@@ -382,12 +382,13 @@ a {
 .video-box {
   position: relative;
   border: 1px solid var(--line);
-  border-radius: var(--radius-lg);
   overflow: hidden;
   background: var(--bg-card);
   box-shadow: var(--shadow);
   aspect-ratio: 16 / 9;
   cursor: pointer;
+  width: 100%;  
+  border-radius: 22px;
 }
 
 
